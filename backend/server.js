@@ -3,6 +3,9 @@ const cors = require('cors');
 
 const mongoose = require('mongoose');
 
+const exerciseRouter = require('./routes/exercise');
+const userRouter = require('./routes/user');
+
 
 const app = express();
 
@@ -11,6 +14,9 @@ require('dotenv').config();
 // use middlewares
 app.use(cors());
 app.use(express.json());
+
+app.use('/exercise', exerciseRouter);
+app.use('/user', userRouter);
 
 // connect to the database
 const url = process.env.DATABASE_URL;
