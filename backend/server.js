@@ -14,7 +14,8 @@ app.use(express.json());
 
 // connect to the database
 const url = process.env.DATABASE_URL;
-mongoose.connect(url, {useNewUrlPaser: true, useCreateIndex: true});
+mongoose.connect(url);
+// , {useNewUrlPaser: true, useCreateIndex: true}
 
 // declare connection
 const connection = mongoose.connection;
