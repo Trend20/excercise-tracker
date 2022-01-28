@@ -3,8 +3,8 @@ const cors = require('cors');
 
 const mongoose = require('mongoose');
 
-const exerciseRouter = require('./routes/exercise');
-const userRouter = require('./routes/user');
+const exerciseRouter = require('./routes/exercises');
+const userRouter = require('./routes/users');
 
 
 const app = express();
@@ -15,8 +15,8 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
-app.use('/exercise', exerciseRouter);
-app.use('/user', userRouter);
+app.use('/exercises', exerciseRouter);
+app.use('/users', userRouter);
 
 // connect to the database
 const url = process.env.DATABASE_URL;
