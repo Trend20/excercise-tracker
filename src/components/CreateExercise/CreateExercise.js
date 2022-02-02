@@ -1,8 +1,13 @@
-import React from 'react';
-import './CreateExercise.css';
+import React, { Component } from 'react';
 
-function CreateExercise() {
-  return <div></div>;
+class CreateExercise extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    );
+  }
 }
 
 export default CreateExercise;

@@ -1,8 +1,13 @@
-import React from 'react';
-import './ExercisesList.css'
+import React, { Component } from 'react';
 
-function ExercisesList() {
-  return <div></div>;
+class ExercisesList extends Component {
+  render() {
+    return (
+      <div>
+        This is the exercise list component
+      </div>
+    );
+  }
 }
 
 export default ExercisesList;

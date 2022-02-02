@@ -1,8 +1,13 @@
-import React from 'react';
-import './CreateUser.css';
+import React, { Component } from 'react';
 
-function CreateUser() {
-  return <div></div>;
+class CreateUser extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    );
+  }
 }
 
 export default CreateUser;
