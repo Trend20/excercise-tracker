@@ -38,7 +38,7 @@ class CreateUser extends Component {
     return (
       <div>
         <h3>Create New User</h3>
-        <form onSubmit={this.onSubmit}>
+        <form onSubmit={this.onSubmitUser}>
             <div className="form-group"> 
               <label>Username: </label>
               <input  type="text"
