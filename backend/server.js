@@ -31,7 +31,7 @@ connection.once('open', () =>{
 })
 
 // declare the PORT
-const PORT = process.env.PORT || 5500;
+const PORT = process.env.PORT || 5000;
 
 // listen to the port
 app.listen(PORT, () =>{
