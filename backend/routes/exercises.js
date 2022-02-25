@@ -28,7 +28,7 @@ router.route('/add').post((req, res) =>{
 // get exercise by specific id
 router.route('/:id').get((req, res) =>{
   Exercise.findById(req.params.id)
-          .then(exercise => res.json('Exercise deleted!'))
+          .then(exercise => res.json(exercise))
           .catch(error => res.status(400).json('Error: ' + error))
 });
 
