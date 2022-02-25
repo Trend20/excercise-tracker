@@ -28,14 +28,14 @@ router.route('/add').post((req, res) =>{
 // get exercise by specific id
 router.route('/:id').get((req, res) =>{
   Exercise.findById(req.params.id)
-          .then(exercise => res.json('Exercise deleted!'))
+          .then(exercise => res.json(exercise))
           .catch(error => res.status(400).json('Error: ' + error))
 });
 
 // delete exercise
 router.route('/:id').delete((req, res) =>{
   Exercise.findByIdAndDelete(req.params.id)
-          .then(exercise => res.json(exercise))
+          .then(res => res.json('Exercise deleted!!'))
           .catch(error => res.status(400).json('Error: ' + error))
 });
 
