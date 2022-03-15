@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  width: 50%;
+  width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -26,5 +26,13 @@
 
 .nav-container {
   display: flex;
-  width: 80%;
+  width: 30%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.nav-container .item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
