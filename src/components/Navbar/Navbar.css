@@ -26,7 +26,7 @@
 
 .nav-container {
   display: flex;
-  width: 30%;
+  width: 40%;
   align-items: flex-end;
   justify-content: space-between;
 }
@@ -34,5 +34,22 @@
 .nav-container .item {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
+  align-items: center;
+}
+
+.link {
+  background: rgb(10, 73, 146);
+  padding: 15px;
+  font-size: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.link:hover {
+  background: #fff;
+  color: rgb(10, 73, 146);
 }
