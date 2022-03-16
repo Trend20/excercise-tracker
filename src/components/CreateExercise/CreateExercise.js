@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import './CreateExercise.css';
 
 export default class CreateExercise extends Component {
   constructor(props) {
@@ -82,9 +83,9 @@ export default class CreateExercise extends Component {
 
   render() {
     return (
-    <div>
-      <h3>Create New Exercise Log</h3>
+    <div className='exercise'>
       <form onSubmit={this.onSubmit}>
+      <h3>Create New Exercise Here</h3>
         <div className="form-group"> 
           <label>Username: </label>
           <select ref="userInput"
