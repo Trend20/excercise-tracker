@@ -1,7 +1,5 @@
-![form image](readmeimages/remind.png)
-<img src="readmeimages/remind.png">
-![form image](readmeimages/remind2.png)
-<img src="readmeimages/remind2.png">
+![user-form](readmeimages/remind.png)
+![exercise-form](readmeimages/remind2.png)
 
 **Site URL**:
 
