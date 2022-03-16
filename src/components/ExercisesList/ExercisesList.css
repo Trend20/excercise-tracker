@@ -1,0 +1,111 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.list h3 {
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: rgb(10, 73, 146);
+  text-transform: uppercase;
+}
+
+.table {
+  display: flex;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #3d3b3b;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.head {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.head tr {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.head tr th {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: rgb(10, 73, 146);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+tr {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.tbody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.details td {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#edit {
+  display: flex;
+  padding: 15px;
+  background: rgb(10, 73, 146);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#delete {
+  display: flex;
+  padding: 15px;
+  background: rgb(236, 17, 54);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
