@@ -32,6 +32,7 @@
 
 .form-group select {
   background: none;
+  z-index: 10;
 }
 
 .form-group label {
@@ -57,6 +58,12 @@
   color: #fff;
   background-color: rgb(10, 73, 146);
   border: none;
+  font-weight: 900;
+}
+
+.form-btn:hover {
+  color: rgb(10, 73, 146);
+  background: #fff;
 }
 
 .picker {
