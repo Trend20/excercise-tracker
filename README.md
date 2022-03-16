@@ -1,7 +1,7 @@
-![form image](/img/remind.png)
-<img src="/img/remind.png">
-![form image](/img/remind2.png)
-<img src="/img/remind2.png">
+![form image](readmeimages/remind.png)
+<img src="readmeimages/remind.png">
+![form image](readmeimages/remind2.png)
+<img src="readmeimages/remind2.png">
 
 **Site URL**:
 
