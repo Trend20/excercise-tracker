@@ -9,7 +9,7 @@
 
 ### How to run the project.
 
--Open your terminal in Linux or CMD in Windows and run: _git clone git@github.com:Trend20/excercise-tracker.git_
+-Open your terminal in Linux or CMD in Windows and run: _git clone git@github.com:Trend20/excercise-tracker.git
 
 -Then Open the cloned project folder in your favorite code editor.
 
