@@ -87,7 +87,7 @@ export default class CreateExercise extends Component {
       <form onSubmit={this.onSubmit}>
       <h3>Create New Exercise Here</h3>
         <div className="form-group"> 
-          <label>Username: </label>
+          <label>Assignee: </label>
           <select ref="userInput"
               required
               className="form-control"
@@ -122,7 +122,7 @@ export default class CreateExercise extends Component {
               />
         </div>
         <div className="form-group">
-          <label>Date: </label>
+          <label>Due Date: </label>
           <div className='picker'>
             <DatePicker
               wrapperClassName="date-picker"

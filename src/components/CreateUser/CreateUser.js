@@ -7,7 +7,8 @@ class CreateUser extends Component {
   constructor(props){
     super(props)
     this.state ={
-      username: ''
+      username: '',
+      alert: ''
     }
   }
 
@@ -32,9 +33,17 @@ class CreateUser extends Component {
           .then(res => console.log(res.data));
 
     this.setState({
-      username: ''
+      username: '',
+      alert: "User added successfully!"
     })
+
+    setTimeout(() =>{
+      this.setState({
+        alert: ""
+      })
+    }, 2000)
   }
+
   render() {
     return (
       <div className='user'>
@@ -51,6 +60,9 @@ class CreateUser extends Component {
             </div>
             <div className="form-group">
              <input type="submit" value="Add New User" className="form-btn" />
+             {
+               this.onSubmitUser && <p style={{ color: 'green', marginTop: '10px' }}>{this.state.alert}</p>
+             }
             </div>
         </form>
       </div>
