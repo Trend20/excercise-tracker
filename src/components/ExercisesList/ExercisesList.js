@@ -4,16 +4,31 @@ import axios from 'axios';
 import './ExercisesList.css'
 
 const Exercise = props => (
-  <tr className='details'>
-    <td>{props.exercise.username}</td>
-    <td>{props.exercise.description}</td>
-    <td>{props.exercise.duration}</td>
-    <td>{props.exercise.date.substring(0,10)}</td>
-    <td>
+  <div className='details'>
+    <div className='items'>
+      <h3>Assignee:</h3>
+      <p>{props.exercise.username}</p>
+    </div>
+    <div className='items'>
+     <h3>Description:</h3>
+     <p>{props.exercise.description}</p>
+    </div>
+    <div className='items'>
+      <h3>Duration:</h3>
+      <p>{props.exercise.duration}</p>
+    </div>
+    <div className='items'>
+      <h3>Due Date:</h3>
+      <p>{props.exercise.date.substring(0,10)}</p>
+    </div>
+    <div className='items'>
       <Link to={"/edit/"+props.exercise._id} id="edit">edit</Link><a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }} id="delete">delete</a>
-    </td>
-  </tr>
+    </div>
+  </div>
 )
+
+
+
 
 export default class ExercisesList extends Component {
   constructor(props) {
@@ -52,21 +67,12 @@ export default class ExercisesList extends Component {
   render() {
     return (
       <div className='list'>
-        <h3>Logged Exercises</h3>
-        <table className="table">
-          <thead className="head">
-            <tr>
-              <th>Assignee</th>
-              <th>Description</th>
-              <th>Duration</th>
-              <th>Date</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody className='tbody'>
+        <h3>Assigned Exercises</h3>
+        <div className="exercises">
+          <div className='tbody'>
             { this.exerciseList() }
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     )
   }

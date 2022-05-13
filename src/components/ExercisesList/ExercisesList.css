@@ -1,7 +1,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -9,70 +9,47 @@
   margin-top: 20px;
 }
 
-.list h3 {
-  font-size: 0.8rem;
-  font-weight: 900;
-  color: rgb(10, 73, 146);
-  text-transform: uppercase;
-}
-
-.table {
-  display: flex;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  border: 1px solid #3d3b3b;
-  padding: 30px;
-  border-radius: 5px;
-  margin-top: 50px;
-  margin-left: 100px;
-}
-
-.head {
-  width: 100%;
-  justify-content: space-between;
-}
-
-.head tr {
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-
-.head tr th {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  color: rgb(10, 73, 146);
-  font-size: 0.8rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-tr {
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-}
-
-.tbody {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: column;
-  margin: auto;
-}
-
-.details td {
+.exercises{
   display: flex;
   width: 100%;
+}
+
+.tbody{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  padding-top: 30px;
+  grid-gap: 20px;
+  width: 100%;
+}
+
+
+.details{
+  display: flex;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 30px;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.items{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.items h3{
+  width: 50%;
+  text-align: justify;
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+.items p{
+  width: 50%;
+  text-align: justify;
+  font-size: .8rem;
 }
 
 #edit {
@@ -88,6 +65,7 @@ tr {
   cursor: pointer;
   outline: none;
   border: none;
+  border-radius: 50px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -95,7 +73,7 @@ tr {
 #delete {
   display: flex;
   padding: 15px;
-  background: rgb(236, 17, 54);
+  background: rgb(233, 86, 111);
   color: #fff;
   font-weight: 700;
   font-size: 0.8rem;
@@ -105,6 +83,7 @@ tr {
   width: 50%;
   align-items: center;
   justify-content: center;
+  border-radius: 50px;
   text-decoration: none;
   margin-left: 20px;
   text-transform: uppercase;
