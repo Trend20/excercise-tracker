@@ -1,4 +1,11 @@
+![user-form](readmeimages/newremind.png)
+
+## Create User Form
+
 ![user-form](readmeimages/remind.png)
+
+## Create Exercise Form
+
 ![exercise-form](readmeimages/remind2.png)
 
 **Site URL**:
@@ -9,7 +16,7 @@
 
 ### How to run the project.
 
--Open your terminal in Linux or CMD in Windows and run: _git clone git@github.com:Trend20/excercise-tracker.git
+-Open your terminal in Linux or CMD in Windows and run: \_git clone git@github.com:Trend20/excercise-tracker.git
 
 -Then Open the cloned project folder in your favorite code editor.
 

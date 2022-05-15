@@ -36,13 +36,19 @@ export default class ExercisesList extends Component {
 
     this.deleteExercise = this.deleteExercise.bind(this)
 
-    this.state = {exercises: []};
+    this.state = {
+      exercises: [],
+      loading: true
+    };
   }
 
   componentDidMount() {
     axios.get('http://localhost:5000/exercises/')
       .then(response => {
-        this.setState({ exercises: response.data })
+        this.setState({ 
+          exercises: response.data,
+          loading: false
+        })
       })
       .catch((error) => {
         console.log(error);

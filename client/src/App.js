@@ -18,6 +18,11 @@ function App() {
           <Route path="/user" element={<CreateUser />} />
         </Routes>
       </div>
+
+     <div className="footer-text">
+      <p>Copyright © 2022. All Rights Reserved.</p>
+      <p>Designed by @ Enock Omondi</p> 
+     </div>
     </Router>
   );
 }

@@ -6,3 +6,16 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+
+.footer-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.footer-text p{
+  margin-top: 5px;
+  font-size: .8rem;
+}
