@@ -8,7 +8,7 @@
 
 ![exercise-form](readmeimages/remind2.png)
 
-**Site URL**:
+**Site URL**: https://myremind.netlify.app/
 
 ## Technologies used:
 
