@@ -8,12 +8,6 @@ export default class CreateExercise extends Component {
   constructor(props) {
     super(props);
 
-    this.onChangeUsername = this.onChangeUsername.bind(this);
-    this.onChangeDescription = this.onChangeDescription.bind(this);
-    this.onChangeDuration = this.onChangeDuration.bind(this);
-    this.onChangeDate = this.onChangeDate.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-
     this.state = {
       username: '',
       description: '',
@@ -39,31 +33,31 @@ export default class CreateExercise extends Component {
 
   }
 
-  onChangeUsername(e) {
+  onChangeUsername = (e) =>{
     this.setState({
       username: e.target.value
     })
   }
 
-  onChangeDescription(e) {
+  onChangeDescription = (e) =>{
     this.setState({
       description: e.target.value
     })
   }
 
-  onChangeDuration(e) {
+  onChangeDuration = (e) =>{
     this.setState({
       duration: e.target.value
     })
   }
 
-  onChangeDate(date) {
+  onChangeDate = (date) => {
     this.setState({
       date: date
     })
   }
 
-  onSubmit(e) {
+  onSubmit = (e) => {
     e.preventDefault();
 
     const exercise = {
@@ -105,12 +99,13 @@ export default class CreateExercise extends Component {
         </div>
         <div className="form-group"> 
           <label>Description: </label>
-          <input  type="text"
-              required
+          <textarea name="description"
               className="form-control"
               value={this.state.description}
               onChange={this.onChangeDescription}
-              />
+              required 
+              id="description" cols="10" 
+              rows="5"></textarea>
         </div>
         <div className="form-group">
           <label>Duration (in minutes): </label>
