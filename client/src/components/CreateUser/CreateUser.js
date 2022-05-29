@@ -57,12 +57,12 @@ class CreateUser extends Component {
               value={this.state.username}
               onChange={this.onChangeUsername}
               />
+              {
+               this.onSubmitUser && <p style={{ color: 'green', marginTop: '10px' }}>{this.state.alert}</p>
+              }
             </div>
             <div className="form-group">
              <input type="submit" value="Add New User" className="form-btn" />
-             {
-               this.onSubmitUser && <p style={{ color: 'green', marginTop: '10px' }}>{this.state.alert}</p>
-             }
             </div>
         </form>
       </div>
