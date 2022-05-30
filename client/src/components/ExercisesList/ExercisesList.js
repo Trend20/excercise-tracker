@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+import ReactPaginate from 'react-paginate';
 import './ExercisesList.css'
 
 const Exercise = props => (
@@ -38,16 +41,22 @@ export default class ExercisesList extends Component {
 
     this.state = {
       exercises: [],
-      loading: true
+      loading: true,
+      offset: 0,
+      perPage: 8,
+      currentPage: 0,
+      pageCount: 0
     };
   }
 
   componentDidMount() {
     axios.get('http://localhost:5000/exercises/')
       .then(response => {
+        // const exercises = response.data;
         this.setState({ 
           exercises: response.data,
-          loading: false
+          loading: false,
+          pageCount: Math.ceil(this.state.exercises.length / this.state.perPage)
         })
       })
       .catch((error) => {
@@ -65,7 +74,8 @@ export default class ExercisesList extends Component {
   }
 
   exerciseList() {
-    return this.state.exercises.map(currentexercise => {
+    const slice = this.state.exercises.slice(this.state.offset, this.state.offset + this.state.perPage)
+    return slice.map(currentexercise => {
       return <Exercise exercise={currentexercise} deleteExercise={this.deleteExercise} key={currentexercise._id}/>;
     })
   }
@@ -79,6 +89,7 @@ export default class ExercisesList extends Component {
             { this.exerciseList() }
           </div>
         </div>
+        <Pagination count={8} shape="rounded" />
       </div>
     )
   }
