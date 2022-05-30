@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 import './ExercisesList.css'
 
 const Exercise = props => (
@@ -79,6 +81,7 @@ export default class ExercisesList extends Component {
             { this.exerciseList() }
           </div>
         </div>
+        <Pagination count={8} defaultPage={6} shape="rounded" />
       </div>
     )
   }
