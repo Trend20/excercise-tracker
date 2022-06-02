@@ -105,7 +105,7 @@ export default class CreateExercise extends Component {
               onChange={this.onChangeDescription}
               required 
               id="description" cols="10" 
-              rows="5"></textarea>
+              rows="3"></textarea>
         </div>
         <div className="form-group">
           <label>Duration (in minutes): </label>
