@@ -17,6 +17,9 @@ export default class CreateExercise extends Component {
     }
   }
 
+  min = 30;
+  max = 480;
+
   componentDidMount() {
     axios.get('http://localhost:5000/users/')
       .then(response => {
@@ -46,8 +49,9 @@ export default class CreateExercise extends Component {
   }
 
   onChangeDuration = (e) =>{
+    const value = Math.max(this.min, Math.min(this.max, Number(e.target.value)));
     this.setState({
-      duration: e.target.value
+      duration: value
     })
   }
 
@@ -71,6 +75,13 @@ export default class CreateExercise extends Component {
 
     axios.post('http://localhost:5000/exercises/add', exercise)
       .then(res => console.log(res.data));
+
+      this.setState({
+        username: '',
+        description: '',
+        duration: 0,
+        date: new Date(),
+      })
 
     window.location = '/';
   }
@@ -105,12 +116,12 @@ export default class CreateExercise extends Component {
               onChange={this.onChangeDescription}
               required 
               id="description" cols="10" 
-              rows="5"></textarea>
+              rows="3"></textarea>
         </div>
         <div className="form-group">
           <label>Duration (in minutes): </label>
           <input 
-              type="text" 
+              type="number" 
               className="form-control"
               value={this.state.duration}
               onChange={this.onChangeDuration}

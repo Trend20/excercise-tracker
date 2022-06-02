@@ -6,13 +6,12 @@
   width: 100%;
   margin: auto;
   height: 100vh;
-  padding-top: 50px;
 }
 
 .exercise form {
-  width: 40%;
+  width: 30%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  padding: 50px;
+  padding: 20px;
   align-items: center;
 }
 
@@ -26,7 +25,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 5px;
   width: 100%;
 }
 
@@ -42,7 +41,7 @@
 
 .form-control {
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 5px;
   border: 1px solid grey;
   border-radius: 5px;
   outline: none;
