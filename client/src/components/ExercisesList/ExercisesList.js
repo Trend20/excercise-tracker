@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
-import ReactPaginate from 'react-paginate';
 import './ExercisesList.css'
 
 const Exercise = props => (
