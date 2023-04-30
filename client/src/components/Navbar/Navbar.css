@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  width: 70%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -21,14 +21,14 @@
 }
 
 .logo img {
-  width: 40%;
+  max-width: 20%;
 }
 
 .nav-container {
   display: flex;
-  width: 40%;
-  align-items: flex-end;
-  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-container .item {

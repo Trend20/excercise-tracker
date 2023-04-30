@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link} from 'react-router-dom'
+import { navInfo } from '../../data/navInfo';
 import './Navbar.css';
 
 function Navbar() {
@@ -10,14 +11,17 @@ function Navbar() {
           <img src="/img/logo.svg" alt="logo" />
         </Link>
           <ul className="nav-container">
-            <li className="item">
-              <Link to="/" className="link">Exercises</Link>
-            </li>
-            <li className="item">
-              <Link to="/create" className="link">Create Exercise</Link>
-            </li>
-            <li className="item">
-              <Link to="/user" className="link">Create User</Link>
+            {
+              navInfo.map((info) =>{
+                return(
+                  <li key={info.id}>
+                    <Link to={info.link}>{info.text}</Link>
+                  </li>
+                )
+              })
+            }
+            <li>
+              <Link>Get Started</Link>
             </li>
           </ul>
       </nav>
