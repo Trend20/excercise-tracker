@@ -14,7 +14,7 @@ function Navbar() {
         </Link>
         {
           isLoggedIn ? 
-          <ul className="nav-container">
+          (<ul className="nav-container">
             {
               navInfo.map((info) =>{
                 return(
@@ -24,12 +24,13 @@ function Navbar() {
                 )
               })
             }
-          </ul>:
-          <ul className='nav-container'>
+          </ul>)
+          :
+         ( <ul className='nav-container'>
             <li>
-              <Link>Get Started</Link>
+              <Link to="/auth" style={{ textDecoration:'none' }}>Get Started</Link>
             </li>
-          </ul>
+          </ul>)
         }
       </nav>
     </div>
