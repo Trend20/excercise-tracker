@@ -1,17 +1,17 @@
 export const navInfo = [
   {
     id: 1,
-    link:'/',
-    text:'Home'
+    link: "/",
+    text: "Home",
   },
   {
     id: 2,
-    link:'/tasks',
-    text:'Tasks'
+    link: "/tasks",
+    text: "Tasks",
   },
   {
     id: 3,
-    link:'/auth',
-    text:'Get Started'
-  }
-]
+    link: "/auth/signup",
+    text: "Get Started",
+  },
+];

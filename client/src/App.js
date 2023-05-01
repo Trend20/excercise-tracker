@@ -6,6 +6,8 @@ import EditExercise from "./components/EditExercise/EditExercise";
 import CreateExercise from "./components/CreateExercise/CreateExercise";
 import CreateUser from "./components/CreateUser/CreateUser";
 import Home from "./pages/Home";
+import Auth from "./pages/Auth";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Home />} />
+          <Route path="/auth" exact element={<Auth />} />
+          <Route path="/auth/signup" exact element={<Register />} />
           <Route path="/tasks" exact element={<ExercisesList />} />
           <Route path="/edit/id" element={<EditExercise />} />
           <Route path="/create" element={<CreateExercise />} />
