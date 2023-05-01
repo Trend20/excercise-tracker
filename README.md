@@ -1,13 +1,3 @@
-![user-form](readmeimages/newremind.png)
-
-## Create User Form
-
-![user-form](readmeimages/remind.png)
-
-## Create Exercise Form
-
-![exercise-form](readmeimages/remind2.png)
-
 **Site URL**: https://myremind.netlify.app/
 
 ## Technologies used:
