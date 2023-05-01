@@ -11,7 +11,7 @@ export const navInfo = [
   },
   {
     id: 3,
-    link: "/auth/signup",
-    text: "Get Started",
+    link: "/auth/logout",
+    text: "Logout",
   },
 ];

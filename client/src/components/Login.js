@@ -80,7 +80,7 @@ const Login = () => {
             New here? <Link to="/auth/signup">Create Account</Link>{" "}
           </Typography>
         </Box>
-        <Button variant="contained" sx={{ marginTop: "50px" }}>
+        <Button variant="contained" sx={{ marginTop: "30px" }}>
           Login
         </Button>
       </Box>

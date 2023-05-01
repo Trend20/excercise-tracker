@@ -4,12 +4,13 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [showPassword, setShowPassword] = React.useState(false);
@@ -39,7 +40,7 @@ const Register = () => {
           padding: "20px",
           width: "20%",
           borderRadius: "5px",
-          height: "400px",
+          height: "430px",
         }}
       >
         <Box sx={{ width: "100%", marginTop: "30px" }}>
@@ -82,7 +83,12 @@ const Register = () => {
             />
           </FormControl>
         </Box>
-        <Button variant="contained" sx={{ marginTop: "50px" }}>
+        <Box sx={{ marginTop: "20px" }}>
+          <Typography>
+            Already have account? <Link to="/auth/login">Log in</Link>{" "}
+          </Typography>
+        </Box>
+        <Button variant="contained" sx={{ marginTop: "30px" }}>
           Sign up
         </Button>
       </Box>
