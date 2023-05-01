@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif !important;
 }
 
 .footer-text{
@@ -13,9 +13,20 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0px;
+  margin-top: 110px;
 }
 
 .footer-text p{
   margin-top: 5px;
-  font-size: .8rem;
+  font-size: .7rem;
+}
+
+.banner{
+  padding: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  text-align: center;
 }
