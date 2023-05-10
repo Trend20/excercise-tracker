@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   taskName: "",
+  tasks: [],
   taskPriority: "",
   taskDescription: "",
   isFinished: false,
@@ -13,7 +14,7 @@ const taskSlice = createSlice({
   initialState,
   reducers: {
     addTask: (state, action) => {
-      state.taskName = action.payload;
+      state.tasks = [...state, action.payload];
     },
   },
 });
