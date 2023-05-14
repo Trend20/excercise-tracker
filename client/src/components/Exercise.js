@@ -21,7 +21,7 @@ const Exercise = (props) => {
       <p>{props.exercise.date.substring(0,10)}</p>
     </div>
     <div className='items'>
-      <Link to={"/edit/"+props.exercise._id} id="edit">edit</Link><a href="#" onClick={() => { props.deleteExercise(props.exercise._id) }} id="delete">delete</a>
+      <Link to={"/edit/"+props.exercise._id} id="edit">edit</Link><a href="#" onClick={() => {props.deleteExercise(props.exercise._id) }} id="delete">delete</a>
     </div>
   </div>
   )
