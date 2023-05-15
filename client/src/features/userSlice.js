@@ -5,7 +5,7 @@ const initialState = {
   email:'',
   username:'',
   password:'',
-  isLoggedIn: false
+  isLoggedIn: true
 }
 
 // create slice
